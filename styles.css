@@ -54,21 +54,23 @@ body{
     text-shadow: 0 0 25px var(--main-color);
 
 }
-.navbar a{
-    font-size: 1.8rem;
+.navbar a {
+    font-size: 2.2rem;         /* Increase font size */
     color: var(--text-color);
-    margin-left: 4rem;
-    font-weight: 500;
+    margin-left: 5rem;         /* Increase spacing between links */
+    padding: 1rem 0.5rem;      /* Add top/bottom padding */
+    font-weight: 600;          /* Optional: make it bolder */
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
+
 .navbar a:hover,
 .navbar a.active{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
 #menu-icon{
-    font-size: 3.6rem;
+    font-size: 4.2rem;
     color: var(--main-color);
     display: none;
 
@@ -136,14 +138,14 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 6rem;
+    height: 6rem;
     background: transparent;
     border: 2px solid var(--main-color);
-    font-size: 2.5rem;
+    font-size: 3rem;
     border-radius: 50%;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 0 1rem;
     transition: 0.3s ease-in-out;
 }
 .social-icons a:hover{
@@ -566,7 +568,7 @@ span{
         display:block;
 
     }
-    .navbar{
+    .navbar {
         position: absolute;
         top: 100%;
         right: 0;
@@ -580,13 +582,14 @@ span{
         display: none;
 
     }
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        color: white;
+    .navbar a {
+  display: block;
+  font-size: 2.4rem;  /* Increase here */
+  margin: 3rem 0;
+  padding: 1rem;
+  color: white;
+}
 
-    }
     .home{
         flex-direction: column-reverse;
         margin: 5rem 4rem;
@@ -612,4 +615,13 @@ span{
     .projects-container{
         grid-template-columns: repeat(1,1fr)
     }
+}
+.social-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    padding: 2rem 0;
 }
